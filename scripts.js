@@ -16,12 +16,12 @@ function checkTime(i) {
     return i;
 }
 function checkDate(i) {
-    var today = new Date()
-    console.log(today)
-    var day = today.getDate()
-    var month = today.getMonth() + 1
-    var year = today.getFullYear()
-    $("#date").html((year + "/" + month + "/" + day))
+    var today = new Date();
+    console.log(today);
+    var day = today.getDate();
+    var month = today.getMonth() + 1;
+    var year = today.getFullYear();
+    $("#date").html((year + "/" + month + "/" + day));
 }
 
 

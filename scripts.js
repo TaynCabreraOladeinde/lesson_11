@@ -16,7 +16,6 @@ function checkTime(i) {
     return i;
 }
 
-/* --- FUNCTION FOR THE DATE --- */
 var sp = "/";
 var today = new Date();
 var dd = today.getDate();

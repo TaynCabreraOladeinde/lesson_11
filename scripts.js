@@ -7,7 +7,7 @@ function startTime() {
     let s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
     setTimeout(startTime, 1000);
 }
 
@@ -16,16 +16,5 @@ function checkTime(i) {
     return i;
 }
 
-// Date display
-var sp = "/";
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth() + 1; // January is 0
-var yyyy = today.getFullYear();
 
-// Add leading zeros for single digits
-if(dd < 10) dd = '0' + dd;
-if(mm < 10) mm = '0' + mm;
 
-// Display the date using jQuery
-$("#date").html(mm + sp + dd + sp + yyyy);
